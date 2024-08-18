@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2e8b98;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left, .right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .left {
+            background-color: white;
+        }
+        .right {
+            background: url('https://www.designervn.net/logo.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .left h2, .right h2 {
+            margin-bottom: 20px;
+        }
+        .left input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .left button {
+            width: 80%;
+            padding: 10px;
+            background-color: #2e8b98;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .left button:hover {
+            background-color: #267580;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        .signup {
+            margin-top: 20px;
+        }
+        .signup a {
+            color: white;
+            text-decoration: none;
+        }
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Log in to your account</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button>Log In</button>
+            <a href="#" style="margin-top: 10px; text-decoration: none; color: #267580;">Forgot password?</a>
+        </div>
+        <div class="right">
+            <h2>Sign in with one of your social profiles</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
